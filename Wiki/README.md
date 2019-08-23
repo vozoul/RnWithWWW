@@ -8,9 +8,9 @@
 ## Working helpers
 
 - official link [esdoc.org](https://esdoc.org/)
-- config file exemple: [.esdocs.json](./.esdoc.json) Must be in root folder
+- config file exemple: [.esdocs.json](./Sources/.esdoc.json) Must be in root folder
 - [Markdown editing](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) Github link
-- [esdocs](https://github.com/esdoc/esdoc-plugins/tree/master/esdoc-react-plugin) Github link
+- [ESDocs](https://github.com/esdoc/esdoc-plugins/tree/master/esdoc-react-plugin) Github link
 
 ### create project first
 ` react-native init <project_name> `<br>
@@ -42,8 +42,10 @@ create file .esdoc.json in your root folder
 
 ---
 ` { `<br>
-` "source": "./<app_folder>", ` // source of your applicatino react-native <br>
-` "destination": "./docs", ` // this folder is by default you can rename it as you want<br>
+// source folder of your react-native app<br>
+` "source": "./<app_folder>", `<br>
+// docs folder is by default you can rename it, as you want<br>
+` "destination": "./docs", `<br>
 ` "plugins": [ `<br>
 ` {"name": "esdoc-standard-plugin"}, `<br>
 //exemple line if you add an other plugin <br>
@@ -51,3 +53,14 @@ create file .esdoc.json in your root folder
 ` ] `<br>
 ` } `
 
+### Document your code ...
+
+### Use Esdoc
+
+run ESDoc in your command line prompt
+
+> ./node_modules/.bin/esdoc
+
+### Documentation is done
+
+see it in "./docs/index.html"

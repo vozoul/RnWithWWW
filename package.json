@@ -5,11 +5,20 @@
   "scripts": {
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "web": "parcel index.html"
   },
   "dependencies": {
+    "esdoc": "^1.1.0",
+    "esdoc-ecmascript-proposal-plugin": "^1.0.0",
+    "esdoc-jsx-plugin": "^1.0.0",
+    "esdoc-react-plugin": "^1.0.1",
+    "esdoc-standard-plugin": "^1.0.0",
+    "parcel-bundler": "^1.12.3",
     "react": "16.8.6",
-    "react-native": "0.60.5"
+    "react-dom": "^16.9.0",
+    "react-native": "0.60.5",
+    "react-native-web": "^0.11.7"
   },
   "devDependencies": {
     "@babel/core": "^7.5.5",
@@ -20,6 +29,9 @@
     "jest": "^24.9.0",
     "metro-react-native-babel-preset": "^0.56.0",
     "react-test-renderer": "16.8.6"
+  },
+  "alias": {
+    "react-native": "react-native-web"
   },
   "jest": {
     "preset": "react-native"

@@ -1,0 +1,23 @@
+{
+  "coverage": "0%",
+  "expectCount": 4,
+  "actualCount": 0,
+  "files": {
+    "src/ExempleApp.js": {
+      "expectCount": 2,
+      "actualCount": 0,
+      "undocumentLines": [
+        75,
+        27
+      ]
+    },
+    "src/Root.js": {
+      "expectCount": 2,
+      "actualCount": 0,
+      "undocumentLines": [
+        4,
+        5
+      ]
+    }
+  }
+}
